@@ -12,25 +12,20 @@
 
 \section{Introducción}
 
-Cuando existen dos características de un mismo elemento de la
-población (altura y peso, dos asignaturas, logitud y latitud), de
-forma general, si se estudian sobre una misma población y se miden por
-las mismas unidades estadísticas una variable $X$ y una variable $Y$,
-se obtienen series estadísticas de las variabels $X$ e
-$Y$. Considerando simultáneamente las dos series, se suele decir que
-estamos ante una variable estadística bidimensional.
+En forma general, cuando se realiza el registro de observaciones de una
+población de elementos o unidades experimentales independientes, es posible que para un mismo elemento se tengan dos datos como altura y peso, longitud y latitud, las calificaciones de dos asignaturas cursadas por un estudiante, la población y la superficie de dos estados de la república, entre otras; las que se representan por una variable $X$ y una variable $Y$, se obtienen series estadísticas de las $X$ e $Y$. Considerando simultáneamente las dos series, se suele decir que estamos ante una variable estadística bidimensional.
 
 \section[Dist. est. bidimensionales]{Distribuciones estadísticas bidimensionales}
 
 \subsection{Tablas de doble entrada o de contingencia}
 
-Sea una poblacion estudiada simultáneamente según dos características
+Sea una población estudiada simultáneamente según dos características
 $X$ e $Y$; que representaremos genéricamente como $(x_i;\quad
 y_j;\quad n_{ij})$, donde $x_i$, $y_j$ son dos valores cualesquiera y
 $n_{ij}$ es la frecuencia absoluta conjunta del valor $i$-ésimo de $X$
 con el $j$-ésimo de $Y$.
 
-La distribucion de frecuencias bidimensional de ($X$, $Y$), es el
+La distribución de frecuencias bidimensional de ($X$, $Y$), es el
 conjunto de valores
 
 ${(x_i, y_j); n_{ij}} i = 1, ..., p; j = 1, ..., q$
@@ -40,7 +35,7 @@ tal que
 $\sum_i^p\sum_j^q n_{ij}= N$ o equivalente $\sum_i^p\sum_j^q f_{ij} = 1$
 
 Una forma de disponer estos resultados es la conocida como tabla de
-doble entrada o tabla de contingencia, la cual podemos representar
+doble entrada, tabla de contingencia, o tabla de correlación, la cual podemos representar
 como sigue:
 
 \begin{center}
@@ -68,7 +63,6 @@ como sigue:
       \hline
     \end{tabular}
 \end{center}
-
 
 Por ejemplo, cuando se trate de la frecuencia $n_{ij}$ nos indica el
 número de veces que aparece $x_1$ conjuntamente con $y_1$; el valor de
@@ -101,49 +95,53 @@ coordenadas.
 
 \begin{center}
     \includegraphics[scale=1.8]{nube_puntos_02.png}\\
-Los diferentes colores y tamaños de los círculos permiten
-    hacer inferencias sobre la frecuencia de cada coordenada
+Los diferentes colores y tamaños de los círculos permiten hacer inferencias sobre la frecuencia de cada coordenada
 \end{center}
 
 \begin{center}
     \includegraphics[scale=2.8]{nube_puntos_03.png}\\
-    En este caso, el grado de transparencia permite hacer inferencias
-    sobre la frecuencia de cada par ordenado de que se trate.
+    En este caso, el grado de transparencia permite hacer inferencias sobre la frecuencia de ca par ordenado de que se trate.
 \end{center}
 
 \section{Distribuciones marginales}
 
-Apartir de una distribución bidimensional se pueden obtener 2
+A partir de una distribución bidimensional se pueden obtener 2
 distribuciones unidimensionales MARGINALES: marginal de $X$ y marginal
 de $Y$. 
 
 En el caso de $X$ se tiene
 
 \begin{center}
-    \begin{tabular}[c]{|c||c|c|c|c|c|c||c|}
+    \begin{tabular}[c]{|c||c|}
       \hline
-      \qquad &  $y_1$ & $y_2$          & $n_i$\\
-      \hline
-      \hline
-      $x_1$  &  $n_{11}$ & $n_{12}$    & $n_{1\cdot}$\\
-      \hline
-      $x_2$  &  $n_{21}$ & $n_{22}$    & $n_{2\cdot}$\\
-      \hline
-      $x_3$  &  $n_{31}$ & $n_{32}$    & $n_{3\cdot}$\\
-      \hline
-      $\vdots$  &  $\vdots$ & $\vdots$ & $\dots$\\
-      \hline
-      $x_i$  &  $n_{i1}$ & $n_{i2}$    & $n_{i\cdot}$\\
-      \hline
-      $\vdots$  &  $\vdots$ & $\vdots$ & $\dots$\\
-      \hline
-      $x_h$  &  $n_{h1}$ & $n_{h2}$    & $n_{h\cdot}$\\
+      \qquad & $n_i$\\
       \hline
       \hline
-      $x_{\cdot j}$  &  $n_{\cdot 1}$  & $N$\\
+      $x_1$  & $n_{1\cdot}$\\
+      \hline
+      $x_2$  & $n_{2\cdot}$\\
+      \hline
+      $x_3$  & $n_{3\cdot}$\\
+      \hline
+      $\vdots$ & $\dots$\\
+      \hline
+      $x_i$  & $n_{i\cdot}$\\
+      \hline
+      $\vdots$  & $\dots$\\
+      \hline
+      $x_h$  & $n_{h\cdot}$\\
+      \hline
+      \hline
+      $x_{\cdot j}$  & $N$\\
       \hline
     \end{tabular}
 \end{center}
+
+lo cual corresponde a la ultima columna de la primera tabla. Para el caso de la $Y$, se puede obtener:
+
+% crear tabla para Y
+
+
 
 \end{document}
 
