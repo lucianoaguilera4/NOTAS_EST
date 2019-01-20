@@ -12,37 +12,71 @@
 
 \section{Introducción}
 
-El uso del término estocástico para hacer referencia a algo basao en
-la teoría de la probabilidad se puede retrotraer en el tiempo hasta
-Ladislaus Bortkiewicz, quien le dio el sentido de ``hacer conjeturas''
-que porta el término griego desde los tiempos filósofos, ay a partir
-del título de Ars Conjectandi que Jakob Bernoulli dio a su trabajo
-sobre teoría de la probabilidad.
+El uso del término estocástico hace referencia a la evolución de un
+fenómeno aleatorio en el tiempo. Este tipo de fenómeno se estudia con
+el objetivo de explicar la estructura del fenómeno y proveer una
+predicción de su evolución, al menos a corto plazo, de una variable
+que observamos a lo largo del tiempo. Muchos fenómenos han sido
+estudiados con un enfoque probabilista, tratándolos como procesos
+estocásticos, ya que especificamos las variables que son aleatorias
+para cada instante del tiempo.
 
-En matemáticas, específicamente en la teoría de la probabilidad, el
-campo de los procesos estocásticos ha sido una importante área de
-investigación. Si bien, en muchos problemas probabilistas se usan
-vareables aleatorias fijas, en los procesos estocásticos necestiamos
-especificar las variables aleatorias para cada instante del tiempo.
-
-Una matriz estocástica es una matriz que tiene valores reales no
-negativos que suman uno en cada columna. Un sistema o proceso
-estocástico es el cual su comportamiento es no deterministico. Esto
-significa que el estado subsecuente del sistema se determina tanto por
-las acciones predecibles del proceso, como por un elemento
-aleatorio. La mayoría (si es que no todos), los sistemas de la vida
-real son estocásticos.
+Siguiendo estos pensamientos, es posible traducir un proceso
+estocástico como una colección o familia de variables aleatorias,
+ordenadas que pueden variar en el tiempo y, que además, por no
+reconocerse el origen o la causa de dichos fenómenos, son no
+deterministas.  Esto significa que el estado subsecuente del sistema
+se determina tanto por las acciones predecibles del proceso, como por
+un elemento aleatorio. La mayoría (si es que no todos), los sistemas
+de la vida real son estocásticos.
 
 Su comportamiento puede ser medido y aproximado a distribuciones y
 probabilidades, pero rara vez pueden ser determinados por un solo
-valor (por ende no determinísticos). Por ejemplo, el tiempo que un
-cajero de un banco requiere para procesar el depósito de un cliente
-depende de varios factores (algunos de ellos pueden ser controlados,
-otros no; algunos son medibles, otros no), pero al final, realizando
-un conjunto de observciones del tiempo de procesamiendo de cada
-depóstio del cajero puede permitir ajustar los tiempos a una
-distribución y ``predecir'' cuál será el tiempo de proceso en un
-modelo de simulación por eventos discretos.
+valor. A continuación se indican algunos ejemplos para explicar los
+conceptos descritos:
+
+\begin{itemize}
+    \item El tiempo que un cajero de un banco requiere para procesar
+    el depósito de un cliente depende de varios factores (algunos de
+    ellos pueden ser controlados, otros no; algunos son medibles,
+    otros no), pero al final, realizando un conjunto de observaciones
+    del tiempo de procesamiento de cada deposito del cajero puede
+    permitir ajustar los tiempos a una distribución y ``predecir''
+    cuál será el tiempo de proceso en un modelo de simulación por
+    eventos discretos.
+    \item Supóngase que se estudia el número de personas que asistan
+    al servicio médico en cierto hospital. En un intervalo de tiempo
+    determinado, digamos una hora, se puede estudiar el comportamiento
+    de llegas mediante la definición de la variable aleatoria ``Número
+    de personas que llegan el consultorio en una hora''. Si en vez de
+    una hora se consideran dos horas, es claro que el número de
+    llegadas tiene a ser mayor, y por consiguiente, la distribución de
+    probabilidad de esta nueva variable aleatoria será distinta a la
+    anterior.  Esto lleva a decir que para cada tiempo, se tendrá una
+    nueva variable aleatoria, generalmente distinta. Y por lo tanto,
+    una forma muy natural de controlar el estudio es definiendo una
+    familia de variables aleatorias, las cuales dependen de una
+    variable determinista que es el tiempo. En situaciones como esta,
+    decimos que se está trabajando con un proceso estocástico.
+    \item Señales de telecomunicación
+    \item Señales biomédicas
+    \item El número de manchas solares año tras año
+\end{itemize}
+
+\section{Definición de procesos estocásticos}
+
+Al seguir una o varias variables en un sistema real cualquiera,
+definido por sus fronteras y sus componentes, se obtienen valores
+conforme avanza el tiempo ($t$). Cada uno de estos valores nos da
+información del fenómeno que se observa y lo hace único para las
+condiciones en las que se desarrolla. Estos valores pueden definirse
+matemáticamente como $X(t)$, $Y(t)$ o $Z(t)$. A cada conjunto de
+valores de estas variables por cada $t$ se le conoce como
+\emph{estado}.
+
+Así, ${X_n, n \; \in \; N}$, donde $n$ indica el espacio de
+tiempo o instante correspondiente.
+
 
 \end{document}
 

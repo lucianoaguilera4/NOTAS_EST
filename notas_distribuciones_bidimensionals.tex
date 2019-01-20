@@ -12,18 +12,25 @@
 
 \section{Introducción}
 
-En forma general, cuando se realiza el registro de observaciones de una
-población de elementos o unidades experimentales independientes, es posible que para un mismo elemento se tengan dos datos como altura y peso, longitud y latitud, las calificaciones de dos asignaturas cursadas por un estudiante, la población y la superficie de dos estados de la república, entre otras; las que se representan por una variable $X$ y una variable $Y$, se obtienen series estadísticas de las $X$ e $Y$. Considerando simultáneamente las dos series, se suele decir que estamos ante una variable estadística bidimensional.
+En forma general, cuando se realiza el registro de observaciones de
+una población de elementos o unidades experimentales independientes,
+es posible que para un mismo elemento se tengan dos datos como altura
+y peso, longitud y latitud, las calificaciones de dos asignaturas
+cursadas por un estudiante, la población y la superficie de dos
+estados de la república, entre otras; las que se representan por una
+variable $X$ y una variable $Y$, se obtienen series estadísticas de
+las $X$ e $Y$. Considerando simultáneamente las dos series, se suele
+decir que estamos ante una variable estadística bidimensional.
 
 \section[Dist. est. bidimensionales]{Distribuciones estadísticas bidimensionales}
 
 \subsection{Tablas de doble entrada o de contingencia}
 
 Sea una población estudiada simultáneamente según dos características
-$X$ e $Y$; que representaremos genéricamente como $(x_i;\quad
-y_j;\quad n_{ij})$, donde $x_i$, $y_j$ son dos valores cualesquiera y
-$n_{ij}$ es la frecuencia absoluta conjunta del valor $i$-ésimo de $X$
-con el $j$-ésimo de $Y$.
+$X$ e $Y$; que representaremos genéricamente como
+$(x_i;\quad y_j;\quad n_{ij})$, donde $x_i$, $y_j$ son dos valores
+cualesquiera y $n_{ij}$ es la frecuencia absoluta conjunta del valor
+$i$-ésimo de $X$ con el $j$-ésimo de $Y$.
 
 La distribución de frecuencias bidimensional de ($X$, $Y$), es el
 conjunto de valores
@@ -35,8 +42,8 @@ tal que
 $\sum_i^p\sum_j^q n_{ij}= N$ o equivalente $\sum_i^p\sum_j^q f_{ij} = 1$
 
 Una forma de disponer estos resultados es la conocida como tabla de
-doble entrada, tabla de contingencia, o tabla de correlación, la cual podemos representar
-como sigue:
+doble entrada, tabla de contingencia, o tabla de correlación, la cual
+podemos representar como sigue:
 
 \begin{center}
     \begin{tabular}[c]{|c||c|c|c|c|c|c||c|}
@@ -75,7 +82,8 @@ $n_{i\cdot}$ las de $x$.
 Uno de los objetivos del análisis de distribuciones bidimensionales es
 estudiar si existe una asociación o relación entre las variables $X$ y
 $Y$. A partir de este tipo de distribución, también es posible obtener
-distribuciones unidimensionales de dos tipos: \emph{marginales} y \emph{condicionadas}.
+distribuciones unidimensionales de dos tipos: \emph{marginales} y
+\emph{condicionadas}.
 
 \section[Representaciones gráficas]{Representaciones gráficas:
     diagrama de dispersión o nube de puntos}
@@ -95,19 +103,21 @@ coordenadas.
 
 \begin{center}
     \includegraphics[scale=1.8]{nube_puntos_02.png}\\
-Los diferentes colores y tamaños de los círculos permiten hacer inferencias sobre la frecuencia de cada coordenada
+    Los diferentes colores y tamaños de los círculos permiten hacer
+    inferencias sobre la frecuencia de cada coordenada
 \end{center}
 
 \begin{center}
     \includegraphics[scale=2.8]{nube_puntos_03.png}\\
-    En este caso, el grado de transparencia permite hacer inferencias sobre la frecuencia de ca par ordenado de que se trate.
+    En este caso, el grado de transparencia permite hacer inferencias
+    sobre la frecuencia de ca par ordenado de que se trate.
 \end{center}
 
 \section{Distribuciones marginales}
 
 A partir de una distribución bidimensional se pueden obtener 2
 distribuciones unidimensionales MARGINALES: marginal de $X$ y marginal
-de $Y$. 
+de $Y$.
 
 En el caso de $X$ se tiene
 
@@ -137,9 +147,19 @@ En el caso de $X$ se tiene
     \end{tabular}
 \end{center}
 
-lo cual corresponde a la ultima columna de la primera tabla. Para el caso de la $Y$, se puede obtener:
+lo cual corresponde a la ultima columna de la primera tabla. Para el
+caso de la $Y$, se puede obtener:
 
-% crear tabla para Y
+\begin{center}
+    \begin{tabular}[c]{|c||c|c|c|c|c|c||c|}
+      \hline
+      \qquad &  $y_1$ & $y_2$ & $\dots$ & $y_j$ & $\dots$ & $y_k$ & $n_i$\\
+      \hline
+      \hline
+      $x_{\cdot j}$  &  $n_{\cdot 1}$ & $n_{\cdot 2}$ & $\dots$ & $n_{\cdot j}$ & $\dots$ & $n_{\cdot k}$ & $N$\\
+      \hline
+    \end{tabular}
+\end{center}
 
 
 
